@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+
+    background: url(/images/bg-pattern.svg) no-repeat fixed;
+    background-size: 100% auto;
+    line-height: 2;
+
+
+}
+
+ul {
+    list-style-image: url(./images/icon-check.svg);
+    color: hsl(225, 20%, 60%);
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+hr {
+    color: black;
+
+
+}
+
+.container {}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.header-text {
+    position: absolute;
+
+}
+
+.header-title {
+    color: hsl(227, 35%, 25%);
+    ;
+    font-size: x-large;
+    font-weight: bold !important;
+
+}
+
+.header-description {
+    color: hsl(225, 20%, 60%);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 60px 450px;
+    border-radius: 10px;
+    padding: 25px;
+    padding-top: 50px;
+
+}
+
+.card-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-image: url(./images/icon-check.svg);
+    color: hsl(225, 20%, 60%);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.slider {
+
+    background: url(./images/icon-slider.svg);
+    outline: none;
+    -webkit-appearance: none;
+    height: 7px;
+    width: 100%;
+    border-radius: 25px;
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%)
+}
+
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: hsl(225, 20%, 60%);
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+
+.monthly {
+    margin-right: 10px;
+}
+
+.yearly {
+    margin-left: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start-button {
+    color: hsl(226, 100%, 87%);
+    background-color: hsl(227, 35%, 25%);
+    border-radius: 20px;
+    border: none;
+    padding: 9px 40px;
+
+}
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.sliderr {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.sliderr:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.sliderr {
+    background-color: #2196F3;
+}
+
+input:focus+.sliderr {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.sliderr:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.sliderr.round {
+    border-radius: 34px;
+}
+
+.sliderr.round:before {
+    border-radius: 50%;
+}
